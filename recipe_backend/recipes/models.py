@@ -16,5 +16,5 @@ class Rating(models.Model):
     score = models.IntegerField(default=0)
 
     def __str__(self):
-        return f"{self.score} - {self.recipe.title}"
+        return f"{self.score}/10 Rating for {self.recipe.title}"
 
